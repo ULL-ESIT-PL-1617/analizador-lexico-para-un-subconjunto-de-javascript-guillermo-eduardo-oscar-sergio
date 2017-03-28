@@ -5,7 +5,7 @@ Object.constructor.prototype.error = function (message, t) {
     throw t;
 };
 
-function initParsing() {
+function main() {
     var parse = make_parse();
     var source = INPUT.value;
     var string, tree;
@@ -22,5 +22,5 @@ function initParsing() {
 }
 
 window.onload = function() {
-  PARSE.onclick = initParsing;
+    PARSE.onclick = main;
 };

@@ -20,7 +20,7 @@
 // will match any of these:
 //      <=  >>  >>>  <>  >=  +: -: &: &&: &&
 
-'use strict';
+"use strict";
 
 RegExp.prototype.bexec = function(str) {
   var i = this.lastIndex;
@@ -43,7 +43,7 @@ String.prototype.tokens = function (prefix, suffix) {
     const ONELINECOMMENT      = /\/\/.*/g;
     const MULTIPLELINECOMMENT = /\/[*]\(.|\r?\n)*[*]\//g;
     const NUM                 = /\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b/g;
-    const STRING              = /('(\\.|[^'])*')|("(\\.|[^"])*")/g;     
+    const STRING              = /('(\\.|[^'])*')|("(\\.|[^"])*")/g;
     const TWOCHAROPERATORS    = /(===|!==|[+][+=]|-[-=]|=[=<>]|[<>][=<>]|&&|[|][|])/g;
     const ONECHAROPERATORS    = /([=+-*/()[\]{,;.<>:}|])/;
     const tokens = [WHITES, ID, , ONELINECOMMENT, MULTIPLELINECOMMENT, NUM, STRING TWOCHAROPERATORS, ONECHAROPERATORS];
