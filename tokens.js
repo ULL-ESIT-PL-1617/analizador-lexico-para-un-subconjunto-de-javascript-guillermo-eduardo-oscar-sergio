@@ -54,10 +54,9 @@ String.prototype.tokens = function (prefix, suffix) {
     const tokens = [WHITES, ID, , ONELINECOMMENT, MULTIPLELINECOMMENT, NUM, STRING TWOCHAROPERATORS, ONECHAROPERATORS];
 
 
-    var make = function (type, value) {
 
 // Make a token object.
-
+let make = function (type, value) {
         return {
             type: type,
             value: value,
@@ -66,6 +65,59 @@ String.prototype.tokens = function (prefix, suffix) {
         };
     };
 
+    let getTok = function() {
+      let str = m[0];
+      i += str.length; // Warning! side effect on i
+      return str;
+    };
+
+    // Empieza a tokenizar. Si la cadena está vacía no se retorna nada
+    if (!this) return;
+
+    // Vamos recorriendo el texto
+    while (i < this.length) {
+        tokens.forEach(function(t) { t.lastIndex = i;}); // Sincroniza el lastIndex para todos los regexp
+        from = i;
+        // Ignoramos los espacios en blanco y los comentarios
+        if (m = WHITES.bexec(this) ||
+           (m = ONELINECOMMENT.bexec(this))  ||
+           (m = MULTIPLELINECOMMENT.bexec(this))) { getTok(); }
+        // Nombre identificador.
+        else if (m = ID.bexec(this)) {
+            result.push(push(make('number', n))); // Si es un id
+        }
+        // Números.
+        else if (m = NUM.bexec(this)) { // Llama a bexec por si es un número
+            n = +getTok();
+
+            if (isFinite(n)) {
+                result.push(make('number', n));
+            } else {
+                make('number', m[0]).error("Bad number");
+            }
+        }
+        // String
+        else if (m = STRING.bexec(this)) {
+            result.push(push(make('string', getTok().replace(/^["']|["']$/g,'')))); // Quita las comillas
+        }
+        // TWOCHAROPERATORS
+        else if (m = TWOCHAROPERATORS.bexec(this)) {
+            result.push(make('operator', getTok()));
+        // ONECHAROPERATORS
+        } else if (m = ONECHAROPERATORS.bexec(this)){
+            result.push(make('operator', getTok()));
+        } else {
+          throw "Syntax error near '"+this.substr(i)+"'";
+        }
+    }
+    return result;
+};
+
+
+
+
+
+/*
 // Begin tokenization. If the source string is empty, return nothing.
 
     if (!this) {
@@ -288,4 +340,4 @@ String.prototype.tokens = function (prefix, suffix) {
         }
     }
     return result;
-};
+};*/
