@@ -42,6 +42,11 @@ String.prototype.tokens = function (prefix, suffix) {
     const ID                  = /\b[a-zA-Z_]\w*\b/;
     const ONELINECOMMENT      = /\/\/.*/g;
     const MULTIPLELINECOMMENT = /\/\*\(.|\n)*?\*\//g; // Comprobar
+    const NUM                 = /\b\d+(\.\d*)?([eE][+-]?\d+)?/g; // COMPROBRAR
+    const STRING              = /(\'\.+\')|(\"\.+\")/g;
+    const TWOCHAROPERATORS    = /(== | === | != | && | \|\| | \+\+ | -- | \+= | -= | \*= | \/=)/g;
+    const ONECHAROPERATORS    = /([=+-*/()[\]{,;.<>:}|])/;
+    const tokens = [WHITES, ID, , ONELINECOMMENT, MULTIPLELINECOMMENT, NUM, STRING TWOCHAROPERATORS, ONECHAROPERATORS];
 
 
     var make = function (type, value) {
