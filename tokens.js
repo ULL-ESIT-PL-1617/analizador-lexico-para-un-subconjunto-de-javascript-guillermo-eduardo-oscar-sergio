@@ -20,7 +20,7 @@
 // will match any of these:
 //      <=  >>  >>>  <>  >=  +: -: &: &&: &&
 
-/*jslint this */
+'use strict';
 
 RegExp.prototype.bexec = function(str) {
   var i = this.lastIndex;
@@ -31,32 +31,28 @@ RegExp.prototype.bexec = function(str) {
 
 
 String.prototype.tokens = function (prefix, suffix) {
-    //'use strict';
-    //var c;                      // The current character.
-    var from;                   // The index of the start of the token.
-    var i = 0;                  // The index of the current character.
-    //var length = this.length;
-    var n;                      // The number value.
-    var m;                      // Comprobará el matching
-    //var str;                    // The string value.
-    var result = [];            // An array to hold the results.
+    var from;                       // The index of the start of the token.
+    var i = 0;                      // The index of the current character.
+    var n;                          // The number value.
+    var m;                          // Comprobará el matching
+    var result = [];                // An array to hold the results.
 
     // Expresiones regulares
-
     const WHITES              = /\s+/g;
     const ID                  = /\b[a-zA-Z_]\w*\b/;
     const ONELINECOMMENT      = /\/\/.*/g;
-    const MULTIPLELINECOMMENT = /\/\*\(.|\n)*?\*\//g; // Comprobar
-    const NUM                 = /\b\d+(\.\d*)?([eE][+-]?\d+)?/g; // COMPROBRAR
-    const STRING              = /(\'\.+\')|(\"\.+\")/g;
-    const TWOCHAROPERATORS    = /(== | === | != | && | \|\| | \+\+ | -- | \+= | -= | \*= | \/=)/g;
+    const MULTIPLELINECOMMENT = /\/[*]\(.|\r?\n)*[*]\//g;
+    const NUM                 = /\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b/g;
+    const STRING              = /('(\\.|[^'])*')|("(\\.|[^"])*")/g;     
+    const TWOCHAROPERATORS    = /(===|!==|[+][+=]|-[-=]|=[=<>]|[<>][=<>]|&&|[|][|])/g;
     const ONECHAROPERATORS    = /([=+-*/()[\]{,;.<>:}|])/;
     const tokens = [WHITES, ID, , ONELINECOMMENT, MULTIPLELINECOMMENT, NUM, STRING TWOCHAROPERATORS, ONECHAROPERATORS];
 
 
 
-// Make a token object.
-let make = function (type, value) {
+    // Creamos la función que "fabrica" los tokens.
+    // Estos son una estructura de cuatro atributos.
+    let make = function (type, value) {
         return {
             type: type,
             value: value,
@@ -65,9 +61,11 @@ let make = function (type, value) {
         };
     };
 
+    // Creamos la función que nos devuelve la cadena que representa un token.
+    // Movemos el iterador la longitud de ese token.
     let getTok = function() {
       let str = m[0];
-      i += str.length; // Warning! side effect on i
+      i += str.length;      // Warning! side effect on i
       return str;
     };
 
@@ -76,38 +74,48 @@ let make = function (type, value) {
 
     // Vamos recorriendo el texto
     while (i < this.length) {
-        tokens.forEach(function(t) { t.lastIndex = i;}); // Sincroniza el lastIndex para todos los regexp
+        // Primero se sincroniza el lastIndex para todos los regexp
+        tokens.forEach(function(t) { t.lastIndex = i; });
         from = i;
+
         // Ignoramos los espacios en blanco y los comentarios
         if (m = WHITES.bexec(this) ||
            (m = ONELINECOMMENT.bexec(this))  ||
-           (m = MULTIPLELINECOMMENT.bexec(this))) { getTok(); }
-        // Nombre identificador.
-        else if (m = ID.bexec(this)) {
-            result.push(push(make('number', n))); // Si es un id
+           (m = MULTIPLELINECOMMENT.bexec(this))) {
+               getTok();
         }
-        // Números.
-        else if (m = NUM.bexec(this)) { // Llama a bexec por si es un número
-            n = +getTok();
 
+        // Comprobamos si es un identificador
+        else if (m = ID.bexec(this)) {
+            result.push(push(make('name', n)));
+        }
+
+        // Comprobamos si es un número
+        else if (m = NUM.bexec(this)) {
+            n = +getTok();
+            // Se comprueba si el número es finito
             if (isFinite(n)) {
                 result.push(make('number', n));
             } else {
                 make('number', m[0]).error("Bad number");
             }
         }
-        // String
+
+        // Comprobamos si se trata de un String (comillas dobles o comillas simples)
         else if (m = STRING.bexec(this)) {
-            result.push(push(make('string', getTok().replace(/^["']|["']$/g,'')))); // Quita las comillas
+            // Primero quitamos las comillas
+            str = getTok().replace(/^["']|["']$/g, '');
+            result.push(push(make('string', str)));
         }
-        // TWOCHAROPERATORS
+
+        // Comprobamos si es un operador de dos dígitos
         else if (m = TWOCHAROPERATORS.bexec(this)) {
             result.push(make('operator', getTok()));
-        // ONECHAROPERATORS
+        // Comprobamos si es un operador de un sólo dígito
         } else if (m = ONECHAROPERATORS.bexec(this)){
             result.push(make('operator', getTok()));
-        } else {
-          throw "Syntax error near '"+this.substr(i)+"'";
+        } else {    // Si no es ninguno de los anteriores, es que es un símbolo no identificado y hay un error.
+            throw "Syntax error near '" + this.substr(i) + "'";
         }
     }
     return result;

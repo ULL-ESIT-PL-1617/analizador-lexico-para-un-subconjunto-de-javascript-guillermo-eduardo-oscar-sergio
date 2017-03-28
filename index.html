@@ -9,6 +9,7 @@ td {background-color: white; border: black solid 1pt; padding-left: 10px;
     padding-right: 10px; vertical-align: top;}
 table {width: 90%; border: 0px; cellpadding: 0px;}
     </style>
+    <script src="initParsing.js"></script>
 </head>
 
 <body bgcolor=linen>
@@ -53,13 +54,14 @@ table {width: 90%; border: 0px; cellpadding: 0px;}
     overflow: auto;
     padding: 0.5em;
     width: 100%;"></textarea>
-<input id="PARSE" value=parse type=button>
+<button onclick="initParsing()">Parse</button>
+<!--<input id="PARSE" value=parse type=button>-->
 <noscript><p>You may not see it because you have JavaScript turned off. Uffff!</p></noscript>
 <script src="tokens.js"></script>
 <script src="parse.js"></script>
 <script src="json2.js"></script>
 <pre id=OUTPUT></pre>
-<script>
+<!--<script>
 /*jslint evil: true */
 
 /*members create, error, message, name, prototype, stringify, toSource,
@@ -114,7 +116,7 @@ Object.prototype.error = function (message, t) {
     };
 }());
 
-</script>
+</script>-->
 </pre>
 </body>
 </html>
