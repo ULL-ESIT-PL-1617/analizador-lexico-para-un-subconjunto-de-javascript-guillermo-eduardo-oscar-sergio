@@ -22,6 +22,9 @@
 
 /*jslint this */
 
+//AÑADIR LAST INDEX
+
+
 String.prototype.tokens = function (prefix, suffix) {
     'use strict';
     var c;                      // The current character.
@@ -29,10 +32,17 @@ String.prototype.tokens = function (prefix, suffix) {
     var i = 0;                  // The index of the current character.
     var length = this.length;
     var n;                      // The number value.
-    var q;                      // The quote character.
+    var m;                      // Comprobará el matching
     var str;                    // The string value.
-
     var result = [];            // An array to hold the results.
+
+    // Expresiones regulares
+
+    const WHITES              = /\s+/g;
+    const ID                  = /\b[a-zA-Z_]\w*\b/;
+    const ONELINECOMMENT      = /\/\/.*/g;
+    const MULTIPLELINECOMMENT = /\/\*\(.|\n)*?\*\//g; // Comprobar
+
 
     var make = function (type, value) {
 
@@ -269,4 +279,3 @@ String.prototype.tokens = function (prefix, suffix) {
     }
     return result;
 };
-
