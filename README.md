@@ -8,18 +8,13 @@
 * Douglas Crockford escribió su analizador léxico sin usar expresiones regulares. Eso hace que sea extenso (268 líneas). Su analizador es un subconjunto de JS que no tiene - entre otras cosas - expresiones regulares ya que uno de sus objetivos era que el analizador se analizara a si mismo.
 ---
 ## Requisitos
-1. Douglas Crockford escribió su analizador léxico sin usar expresiones regulares. Reescriba el analizador léxico en tokens.js usando expresiones regulares.
-2. No se limite a copiar el fichero tokens.js: estúdielo, entiéndalo y vaya modificando el tokens.js original de Crockford hasta obtener una solución basada en expresiones regulares
-3. Evite que se hagan copias de la cadena siendo procesada. Muévase dentro de la misma cadena usando lastIndex. Tiene una solución dada por el profesor en [link](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
-4. Mejore la solución de Crockford usado regexps en tokens.js
-5. Haga el despliegue de su aplicación en Heroku o en la máquina virtual del iaas
+1. Douglas Crockford escribió su analizador léxico sin usar expresiones regulares. Reescriba el analizador léxico en `tokens.js` usando expresiones regulares.
+2. No se limite a copiar el fichero `tokens.js`: estúdielo, entiéndalo y vaya modificando el `tokens.js` original de Crockford hasta obtener una solución basada en expresiones regulares
+3. Evite que se hagan copias de la cadena siendo procesada. Muévase dentro de la misma cadena usando lastIndex. Tiene una solución dada por el profesor en [link](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js).
+4. Mejore la solución de Crockford usado regexps en `tokens.js`
+5. Haga el despliegue de su aplicación en Heroku o en la máquina virtual del IAAS.
 6. Complete los apuntes en su GitBook describiendo las expresiones regulares y lo aprendido en esta práctica
-7. Opcional: Use sessionspara controlar quien accede a sus apuntes. Puede ver un ejemplo de como hacerlo en los ficheros: [Ejemplo] (ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs)
-
-staticauth.js (el servidor)
-gbookexample (el libro gitbook)
-gbuild (script para compilar el libro)
-
+7. Opcional: Use sessions para controlar quien accede a sus apuntes. Puede ver un ejemplo de como hacerlo en [este repositorio.](https://github.com/ULL-ESIT-DSI-1617/express-cookies-examples)
 8. Cuando haga la entrega indique los enlaces a los repos (apuntes y analizador) así como a los despliegues
 ---
 ## Integrantes
@@ -35,14 +30,3 @@ Douglas Crockford
 douglas@crockford.com
 
 2010-11-12
-
-tdop.html contains a description of Vaughn Pratt's Top Down Operator Precedence,
-and describes a parser for Simplified JavaScript in Simplified JavaScript.
-
-index.html parses parse.js and displays its AST. The page depends on json2.js
-(which is not included in this project) and on parse.js and tokens.js (which
-are).
-
-tdop.js contains a Simplified JavaScript parser. See tdop.html for commentary.
-
-tokens.js produces an array of token objects from a string.
