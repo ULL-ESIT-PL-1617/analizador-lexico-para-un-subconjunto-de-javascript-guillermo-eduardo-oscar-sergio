@@ -22,18 +22,23 @@
 
 /*jslint this */
 
-//AÑADIR LAST INDEX
+RegExp.prototype.bexec = function(str) {
+  var i = this.lastIndex;
+  var m = this.exec(str);
+  if (m && m.index == i) return m;
+  return null;
+}
 
 
 String.prototype.tokens = function (prefix, suffix) {
-    'use strict';
-    var c;                      // The current character.
+    //'use strict';
+    //var c;                      // The current character.
     var from;                   // The index of the start of the token.
     var i = 0;                  // The index of the current character.
-    var length = this.length;
+    //var length = this.length;
     var n;                      // The number value.
     var m;                      // Comprobará el matching
-    var str;                    // The string value.
+    //var str;                    // The string value.
     var result = [];            // An array to hold the results.
 
     // Expresiones regulares
