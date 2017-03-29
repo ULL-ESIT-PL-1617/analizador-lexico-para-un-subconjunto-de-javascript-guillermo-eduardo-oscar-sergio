@@ -1,4 +1,11 @@
 # Práctica: Analizador léxico para un subconjunto de JavaScript
+
+## Despliegue
+
+* [Heroku](https://analizador-lexico-js-egos.herokuapp.com)
+* IAAS()
+
+
 ## Descripción
 * tdop.html contains a description of Vaughn Pratt’s Top Down Operator Precedence, and describes the parser whose lexer we are going to write in this lab. Is a simplified version of JavaScript.
 * The file index.html parses parse.js and displays its AST.
