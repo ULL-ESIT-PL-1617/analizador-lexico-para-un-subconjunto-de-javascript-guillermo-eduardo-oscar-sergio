@@ -12,7 +12,7 @@ let users = {
 };
 
 let instructions = `
-Visit these urls in the browser:
+Accede como usuario para ver el contenido:
 <ul>
   <li> <a href="http://localhost:5000/content/index.html">Analizador léxico</a> </li>
   <li> <a href="http://localhost:5000/login?username=usuario&password=usuario">Login con usuario</a> </li>
@@ -71,9 +71,8 @@ app.get('/logout', function (req, res) {
  
 // Get content endpoint
 app.get('/content/*?', 
-    auth  // next only if authenticated
+    auth  // Solo sigues si estas autentificado
 );
- 
 app.use('/content', express.static(path.join(__dirname)));
 
 app.listen(5000);
