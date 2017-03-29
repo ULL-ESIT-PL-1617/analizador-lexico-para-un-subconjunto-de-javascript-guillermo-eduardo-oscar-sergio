@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio.git"
   },
-  "author": "",
+  "author": "Óscar Darias Plasencia, Eduardo de la Paz González, Guillermo Esquivel González, Sergio García de la Iglesia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio#readme"
+  "homepage": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio#readme",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
 }
