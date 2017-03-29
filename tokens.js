@@ -12,7 +12,7 @@
 RegExp.prototype.bexec = function(str) {
    var i = this.lastIndex;
    var m = this.exec(str);
-   if(m && m.index == i) return m;
+   if (m && m.index == i) return m;
    return null;
 }
 
