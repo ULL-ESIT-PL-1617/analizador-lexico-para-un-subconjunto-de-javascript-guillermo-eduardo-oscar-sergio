@@ -1,0 +1,501 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Capítulo 11: Documentación de la API de enrutamiento · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../CookiesSessions/cookies.html" />
+    
+    
+    <link rel="prev" href="../UsingMiddleware/UsingMiddleware.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Capítulo 0: Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Tutorial/Git/git.html">
+            
+                <a href="../../Tutorial/Git/git.html">
+            
+                    
+                    Capítulo 1: Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Tutorial/NodeJS/nodejs.html">
+            
+                <a href="../../Tutorial/NodeJS/nodejs.html">
+            
+                    
+                    Capítulo 2: NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Tutorial/MarkDown/markdown.html">
+            
+                <a href="../../Tutorial/MarkDown/markdown.html">
+            
+                    
+                    Capítulo 3: MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Tutorial/gh-pages/gh-pages.html">
+            
+                <a href="../../Tutorial/gh-pages/gh-pages.html">
+            
+                    
+                    Capítulo 4: GitHub Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Tutorial/GitBook/gitbook.html">
+            
+                <a href="../../Tutorial/GitBook/gitbook.html">
+            
+                    
+                    Capítulo 5: GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Tutorial/Pandoc/pandoc.html">
+            
+                <a href="../../Tutorial/Pandoc/pandoc.html">
+            
+                    
+                    Capítulo 6: Pandoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Tutorial/HerramientasUtiles/herraminetasUtiles.md">
+            
+                <span>
+            
+                    
+                    Capítulo 7: Herramientas útiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../BasicRouting/BasicRouting.html">
+            
+                <a href="../BasicRouting/BasicRouting.html">
+            
+                    
+                    Capítulo 8: Enrutamiento básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../RoutingGuide/RoutingGuide.html">
+            
+                <a href="../RoutingGuide/RoutingGuide.html">
+            
+                    
+                    Capítulo 9: Guía de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../UsingMiddleware/UsingMiddleware.html">
+            
+                <a href="../UsingMiddleware/UsingMiddleware.html">
+            
+                    
+                    Capítulo 10: Los Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="RouterAPIDocs.html">
+            
+                <a href="RouterAPIDocs.html">
+            
+                    
+                    Capítulo 11: Documentación de la API de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../CookiesSessions/cookies.html">
+            
+                <a href="../../CookiesSessions/cookies.html">
+            
+                    
+                    Capítulo 12: Las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../CookiesSessions/sessions.html">
+            
+                <a href="../../CookiesSessions/sessions.html">
+            
+                    
+                    Capítulo 13: Las Sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../RegExps/RegExps.html">
+            
+                <a href="../../RegExps/RegExps.html">
+            
+                    
+                    Capítulo 14: Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Capítulo 11: Documentación de la API de enrutamiento</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="documentaci&#xF3;n---api-router">DOCUMENTACI&#xD3;N - API ROUTER</h1>
+<h3 id="introducci&#xF3;n">Introducci&#xF3;n</h3>
+<p>El m&#xF3;dulo <code>router</code> proporciona un objeto enrutador con un funcionamiento similar al de un middleware. Es una especie de aplicaci&#xF3;n muy simple que es capaz &#xFA;nicamente de llevar a cabo funciones de direccionamiento y funciones que ser&#xED;an atribuidas habitualmente a un middleware. Toda aplicaci&#xF3;n Express lleva impl&#xED;cita el uso de este tipo de objetos.</p>
+<p>Un objeto router, como ya hemos mencionado, funciona de una forma similar a un middleware: puede utilizarse como un argumento de <code>app.use()</code> o como argumento del m&#xE9;todo <code>use()</code> de cualquier otro objeto <code>router</code>. Los objetos <code>express</code> tienen un m&#xE9;todo <code>Router</code> que permite crear un nuevo objeto de este tipo:</p>
+<pre><code>var router = express.Router([options]);
+</code></pre><p>El par&#xE1;metro es opcional y sirve para especificar el funcionamiento que queramos que tenga el objeto. Tenemos tres opciones:</p>
+<ul>
+<li><code>caseSensitive</code> hace que se tengan en cuenta las may&#xFA;sculas y min&#xFA;sculas en las peticiones realizadas. Viene desactivada por defecto, y por lo tanto una petici&#xF3;n dirigida a <code>/Foo</code> ser&#xE1; recibida indiferentemente por <code>/foo</code>.</li>
+<li><code>mergeParams</code> es una opci&#xF3;n que por defecto tiene valor <em>false</em> y que preserva los valores de <code>req.params</code> del router &quot;padre&quot; del que estamos creando. Si existen conflictos en los nombres, los valores del router hijo predominan.</li>
+<li><code>strict</code> establece un direccionamiento estricto. Viene desactivado por defecto.</li>
+</ul>
+<p>Una vez se ha instanciado un objeto router, podemos a&#xF1;adirle middlewares y m&#xE9;todos HTTP como en cualquier aplicaci&#xF3;n. Por ejemplo:</p>
+<pre><code>//este m&#xE9;todo responder&#xE1; a cualquier petici&#xF3;n destinada a /
+router.use(&apos;/&apos;, function(req, res, next) {
+  //procedimientos como en cualquier otro middleware
+  next();
+});
+</code></pre><p>Este tipo de procedimientos pueden aislarse en un fichero independiente o incluso en peque&#xF1;as aplicaciones independientes, que son utilizadas desde el programa principal seg&#xFA;n convenga. Si por ejemplo queremos que el router responda a las peticiones recibidas en el directorio <code>/requests</code>, a&#xF1;adimos en la aplicaci&#xF3;n principal:</p>
+<pre><code>//siendo miRouter.js un fichero con el router dentro del directorio routers
+var router = require(&apos;./routers/miRouter&apos;);
+app.use(&apos;/requests&apos;, router);
+</code></pre><hr>
+<h3 id="procedimientos">Procedimientos</h3>
+<p>Los procedimientos que los objetos router ponen a nuestra disposici&#xF3;n son muy similares a las de los objetos express.</p>
+<ul>
+<li><strong>router.METHOD(path, [callback, ...] callback)</strong></li>
+</ul>
+<p>Este tipo de m&#xE9;todos provee la funci&#xF3;n de direccionamiento de Express, donde METHOD es uno de los m&#xE9;todos del protocolo HTTP, como GET, PUT o POST. Estos se escriben en letras min&#xFA;sculas, siendo <code>router.get()</code>, <code>router.put()</code> y <code>router.post()</code> los m&#xE9;todos a nuestra disposici&#xF3;n, entre otros. N&#xF3;tese que su nombre es el mismo que el m&#xE9;todo original del protocolo HTTP, pero en min&#xFA;sculas.</p>
+<p>Estos m&#xE9;todos soportan m&#xFA;ltiples <em>callbacks</em>, que son tratadas por igual y que se comportan a modo de middleware, con la diferencia de que pueden invocar al m&#xE9;todo <code>next(&apos;route&apos;)</code> para ceder el control a otras <em>callbacks</em>. Este mecanismo se utiliza para pasar el control a otras funciones cuando ya no hay raz&#xF3;n para continuar con la ejecuci&#xF3;n de la funci&#xF3;n actual.</p>
+<ul>
+<li><strong>router.all(path, [callback, ...] callback)</strong></li>
+</ul>
+<p>Este m&#xE9;todo se comporta de forma similar a los anteriores, pero responde a todos los m&#xE9;todos HTTP. Es especialmente &#xFA;til para aplicar una l&#xF3;gica &quot;global&quot; a las peticiones a las que responde nuestro router.</p>
+<ul>
+<li><strong>router.param(name, callback)</strong></li>
+</ul>
+<p>A&#xF1;ade disparadores que se asocian a los par&#xE1;metros especificados por el par&#xE1;metro <em>name</em>. Al accederse al par&#xE1;metro, se dispara la funci&#xF3;n <em>callback</em>. Los par&#xE1;metros de esta funci&#xF3;n son:</p>
+<ul>
+<li><code>req</code>, el objeto de la petici&#xF3;n.</li>
+<li><code>res</code>, el objeto de respuesta.</li>
+<li><code>next</code>, siguiente funci&#xF3;n middleware que tomar&#xE1; el control.</li>
+<li>El valor del par&#xE1;metro <em>name</em>.</li>
+<li>El nombre del par&#xE1;metro.</li>
+</ul>
+<p>Se hace uso de estos par&#xE1;metros tanto en m&#xFA;ltiples ejemplos de este tutorial como en los ejemplos elaborados del directorio <code>src</code>.</p>
+<ul>
+<li><strong>router.route(path)</strong></li>
+</ul>
+<p>Este m&#xE9;todo devuelve una instancia de una ruta que puede utilizarse para manejar diversas funciones HTTP. B&#xE1;sicamente devuelve una ruta completa que puede utilizar los m&#xE9;todos del tipo <code>router.METHOD()</code>. Veamos un ejemplo:</p>
+<pre><code>var router = express.Router();
+
+//funci&#xF3;n simple de manejo de par&#xE1;metros del router
+router.param(&apos;userID&apos;, function(req, res, next, id) {
+  req.user = {
+    id: id,
+    name: &apos;default&apos;
+  };
+  next();
+});
+
+//establecemos un manejador para las peticiones a la ruta del usuario anterior
+router.route(&apos;/home/:userID&apos;)
+.get(function (req, res, next) {
+
+})
+.put(function (req, res, next) {
+
+})
+.post(function (req, res, next) {
+
+});
+</code></pre><ul>
+<li><strong>router.use([path], [function, ...] function)</strong></li>
+</ul>
+<p>Al inicio de este cap&#xED;tulo, explicamos que los objetos router pueden utilizarse no s&#xF3;lo como un argumento de un m&#xE9;todo <code>use()</code> de un objeto Express, sino tambi&#xE9;n pueden pasarse como argumentos a los m&#xE9;todos a los m&#xE9;todos <code>use()</code> de otro objeto router. Estos m&#xE9;todos, por tanto, tambi&#xE9;n existen en los router y aceptan tanto funciones middleware como otros objetos router.</p>
+<p>El siguiente ejemplo representa un uso muy sencillo de este tipo de funciones. Todas las peticiones a ese router pasar&#xE1;n primero por este middleware:</p>
+<pre><code>router.use(function(req, res, next) {
+  console.log(&apos;%s %s %s&apos;, req.method, req.url, req.path):
+  next();
+});
+</code></pre><p>El orden en el que se definen los middleware a utilizar con <code>router.use()</code> es muy importante, ya que estos se invocan de forma secuencial. Por tanto, el orden en el que est&#xE9;n escritos en el c&#xF3;digo fuente ser&#xE1; el orden de precedencia en la ejecuci&#xF3;n. Por ejemplo, si queremos servir ficheros desde m&#xFA;ltiples directorios utilizando el middleware <em>static</em>, podemos definir varios usos del mismo con distintos directorios.</p>
+<pre><code>app.use(express.static(__dirname + &apos;/public&apos;));
+app.use(express.static(__dirname + &apos;/png-photos&apos;));
+app.use(express.static(__dirname + &apos;/jpg-photos&apos;));
+</code></pre><p>La prioridad es dada al directorio <em>public</em>, y seguir&#xE1; buscando en el caso de que no encuentre all&#xED; el recurso.</p>
+<p>Es importante saber que aunque las funciones middleware se asocien a un router en particular, el cu&#xE1;ndo son ejecutadas depende m&#xE1;s bien de la ruta a la que pertenezcan en la estructura de directorios del proyecto. Por tanto, los middleware asociados a un determinado router podr&#xED;an ejecutarse para otro router si ambos se encuentran en el mismo directorio del proyecto. Por ello, para evitar este comportamiento, suele ser recomendable situar a los distintos router en distintos directorios.</p>
+<hr>
+<p>En el directorio src de este proyecto, hemos dejado un ejemplo sobre c&#xF3;mo funcionan los objetos router. La tarea de gulp <code>routing</code> ejecuta el ejemplo de forma autom&#xE1;tica: luego simplemente basta con acceder en un navegador a <code>localhost:8000/user/id</code>. En la terminal se mostrar&#xE1; una serie de informaci&#xF3;n. Observar el c&#xF3;digo escrito en <code>appRouter.js</code> y en <code>myRouter.js</code>. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../UsingMiddleware/UsingMiddleware.html" class="navigation navigation-prev " aria-label="Previous page: Capítulo 10: Los Middleware">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../CookiesSessions/cookies.html" class="navigation navigation-next " aria-label="Next page: Capítulo 12: Las Cookies">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Capítulo 11: Documentación de la API de enrutamiento","level":"1.12","depth":1,"next":{"title":"Capítulo 12: Las Cookies","level":"1.13","depth":1,"path":"CookiesSessions/cookies.md","ref":"CookiesSessions/cookies.md","articles":[]},"previous":{"title":"Capítulo 10: Los Middleware","level":"1.11","depth":1,"path":"routing/UsingMiddleware/UsingMiddleware.md","ref":"routing/UsingMiddleware/UsingMiddleware.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"routing/RouterAPIDocumentation/RouterAPIDocs.md","mtime":"2017-03-30T09:44:16.839Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T20:50:25.720Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

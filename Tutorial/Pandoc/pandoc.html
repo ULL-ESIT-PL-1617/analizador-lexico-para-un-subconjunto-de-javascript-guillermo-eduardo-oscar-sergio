@@ -1,0 +1,466 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Capítulo 6: Pandoc · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../HerramientasUtiles/herraminetasUtiles.md" />
+    
+    
+    <link rel="prev" href="../GitBook/gitbook.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Capítulo 0: Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Git/git.html">
+            
+                <a href="../Git/git.html">
+            
+                    
+                    Capítulo 1: Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../NodeJS/nodejs.html">
+            
+                <a href="../NodeJS/nodejs.html">
+            
+                    
+                    Capítulo 2: NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../MarkDown/markdown.html">
+            
+                <a href="../MarkDown/markdown.html">
+            
+                    
+                    Capítulo 3: MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gh-pages/gh-pages.html">
+            
+                <a href="../gh-pages/gh-pages.html">
+            
+                    
+                    Capítulo 4: GitHub Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../GitBook/gitbook.html">
+            
+                <a href="../GitBook/gitbook.html">
+            
+                    
+                    Capítulo 5: GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="pandoc.html">
+            
+                <a href="pandoc.html">
+            
+                    
+                    Capítulo 6: Pandoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../HerramientasUtiles/herraminetasUtiles.md">
+            
+                <span>
+            
+                    
+                    Capítulo 7: Herramientas útiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../routing/BasicRouting/BasicRouting.html">
+            
+                <a href="../../routing/BasicRouting/BasicRouting.html">
+            
+                    
+                    Capítulo 8: Enrutamiento básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../routing/RoutingGuide/RoutingGuide.html">
+            
+                <a href="../../routing/RoutingGuide/RoutingGuide.html">
+            
+                    
+                    Capítulo 9: Guía de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../routing/UsingMiddleware/UsingMiddleware.html">
+            
+                <a href="../../routing/UsingMiddleware/UsingMiddleware.html">
+            
+                    
+                    Capítulo 10: Los Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../routing/RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                <a href="../../routing/RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                    
+                    Capítulo 11: Documentación de la API de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../CookiesSessions/cookies.html">
+            
+                <a href="../../CookiesSessions/cookies.html">
+            
+                    
+                    Capítulo 12: Las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../CookiesSessions/sessions.html">
+            
+                <a href="../../CookiesSessions/sessions.html">
+            
+                    
+                    Capítulo 13: Las Sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../RegExps/RegExps.html">
+            
+                <a href="../../RegExps/RegExps.html">
+            
+                    
+                    Capítulo 14: Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Capítulo 6: Pandoc</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pandoc">Pandoc</h1>
+<p>Pandoc es un <strong>conversor</strong> libre y de c&#xF3;digo abierto, escrito en <strong>Haskell</strong>,  que convierte archivos escritos en un determinado lenguaje de marcado, como MarkDown por ejemplo, a otro tipo de lenguaje. Fue creada por <strong>John MacFarlane</strong>, un profesor de Filosof&#xED;a de la Universidad de Michigan, y representa una herramienta muy potente a la hora de convertir archivos.</p>
+<h3 id="funcionamiento">Funcionamiento</h3>
+<p>El funcionamiento de Pandoc es bastante sencillo. Se le pasa al programa un fichero escrito en MarkDown o en cualquiera de los formatos de entrada que soporta (se especificar&#xE1;n m&#xE1;s adelante),  y lo pasa a un formato determinado, de entre los inclu&#xED;dos en formatos de salida.</p>
+<h3 id="formatos-soportados-por-pandoc">Formatos soportados por Pandoc</h3>
+<p>Pandoc puede convertir los siguientes formatos de entrada a los consiguientes de salida, cualquier combinaci&#xF3;n de &#xE9;stos es posible gracias a &#xE9;sta aplicaci&#xF3;n</p>
+<p><strong>Entrada</strong>:</p>
+<ul>
+<li>reStructuredText                                          </li>
+<li>textile                                                              </li>
+<li>HTML                                                              </li>
+<li>DocBook                                                         </li>
+<li>LaTeX                                                             </li>
+<li>MediaWiki markup                                        </li>
+<li>TWiki markup                                                </li>
+<li>OPML                                                             </li>
+<li>Emacs Org-Mode                                          </li>
+<li>Txt2Tags</li>
+<li>Microsoft Word docx</li>
+<li>Libre Office ODT</li>
+<li>EPUB</li>
+<li>Haddock markup</li>
+</ul>
+<p><strong>Salida:</strong></p>
+<ul>
+<li>HTML y todos sus formatos </li>
+<li>Microsoft Word y sus formatos</li>
+<li>OpenOffice/LibreOffice</li>
+<li>Ebooks</li>
+<li>Formatos de documentaci&#xF3;n (DocBook...)</li>
+<li>InDesign ICML</li>
+<li>OPML</li>
+<li>LaTeX y sus formatos</li>
+<li>PDF</li>
+<li>Lenguajes de marcado (Markdown, MediaWiki markup...)</li>
+</ul>
+<h3 id="instalaci&#xF3;n-y-uso">Instalaci&#xF3;n y uso</h3>
+<p>Para instalar Pandoc, debemos descargarnos un paquete para nuestro correspondiente sistema operativo en la p&#xE1;gina web oficial de Pandoc</p>
+<p><a href="http://pandoc.org/installing.html" title="Enlace de descarga de Pandoc" target="_blank">http://pandoc.org/installing.html</a></p>
+<p>Una vez tengamos Pandoc instalado, usar el conversor es bastante sencillo a trav&#xE9;s de la l&#xED;nea de comandos</p>
+<p>Para ello, debemos especificar:</p>
+<ul>
+<li>El formato de entrada, con la opci&#xF3;n <strong>-f</strong></li>
+<li>El formato de salida con la opci&#xF3;n <strong>-t</strong></li>
+<li>El nombre del fichero que queremos convertir ( Debe de estar en el mismo formato que el formato de salida).</li>
+<li>La opci&#xF3;n <strong>-s</strong>, permite que Pandoc a&#xF1;ada plantillas y cabeceras al nuevo fichero creado.</li>
+<li>La opci&#xF3;n <strong>-o</strong>, nos permite mandar la salida a un determinado fichero y no a la salida est&#xE1;ndar.</li>
+</ul>
+<h4 id="ejemplos"><strong>Ejemplos:</strong></h4>
+<p>Formato para la ejecuci&#xF3;n del comando:</p>
+<pre><code>pandoc nombreFicheroEntrada -f formatoEntrada -t formatoSalida -s -o nombreficheroSalida
+</code></pre><p>Ejemplo de uso para un fichero ejemplo <strong>test.md</strong> y que se quiere pasar a <strong>html</strong>:</p>
+<pre><code>pandoc test.md -f markdown -t html -s -o test.html
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../GitBook/gitbook.html" class="navigation navigation-prev " aria-label="Previous page: Capítulo 5: GitBook">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../HerramientasUtiles/herraminetasUtiles.md" class="navigation navigation-next " aria-label="Next page: Capítulo 7: Herramientas útiles">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Capítulo 6: Pandoc","level":"1.7","depth":1,"next":{"title":"Capítulo 7: Herramientas útiles","level":"1.8","depth":1,"path":"Tutorial/HerramientasUtiles/herraminetasUtiles.md","ref":"Tutorial/HerramientasUtiles/herraminetasUtiles.md","articles":[]},"previous":{"title":"Capítulo 5: GitBook","level":"1.6","depth":1,"path":"Tutorial/GitBook/gitbook.md","ref":"Tutorial/GitBook/gitbook.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial/Pandoc/pandoc.md","mtime":"2017-03-30T09:44:16.839Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T20:50:25.720Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

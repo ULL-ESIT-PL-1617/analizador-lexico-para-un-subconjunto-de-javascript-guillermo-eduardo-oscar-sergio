@@ -1,0 +1,445 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Capítulo 2: NodeJS · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../MarkDown/markdown.html" />
+    
+    
+    <link rel="prev" href="../Git/git.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Capítulo 0: Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Git/git.html">
+            
+                <a href="../Git/git.html">
+            
+                    
+                    Capítulo 1: Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="nodejs.html">
+            
+                <a href="nodejs.html">
+            
+                    
+                    Capítulo 2: NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../MarkDown/markdown.html">
+            
+                <a href="../MarkDown/markdown.html">
+            
+                    
+                    Capítulo 3: MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gh-pages/gh-pages.html">
+            
+                <a href="../gh-pages/gh-pages.html">
+            
+                    
+                    Capítulo 4: GitHub Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../GitBook/gitbook.html">
+            
+                <a href="../GitBook/gitbook.html">
+            
+                    
+                    Capítulo 5: GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Pandoc/pandoc.html">
+            
+                <a href="../Pandoc/pandoc.html">
+            
+                    
+                    Capítulo 6: Pandoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../HerramientasUtiles/herraminetasUtiles.md">
+            
+                <span>
+            
+                    
+                    Capítulo 7: Herramientas útiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../routing/BasicRouting/BasicRouting.html">
+            
+                <a href="../../routing/BasicRouting/BasicRouting.html">
+            
+                    
+                    Capítulo 8: Enrutamiento básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../routing/RoutingGuide/RoutingGuide.html">
+            
+                <a href="../../routing/RoutingGuide/RoutingGuide.html">
+            
+                    
+                    Capítulo 9: Guía de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../routing/UsingMiddleware/UsingMiddleware.html">
+            
+                <a href="../../routing/UsingMiddleware/UsingMiddleware.html">
+            
+                    
+                    Capítulo 10: Los Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../routing/RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                <a href="../../routing/RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                    
+                    Capítulo 11: Documentación de la API de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../CookiesSessions/cookies.html">
+            
+                <a href="../../CookiesSessions/cookies.html">
+            
+                    
+                    Capítulo 12: Las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../CookiesSessions/sessions.html">
+            
+                <a href="../../CookiesSessions/sessions.html">
+            
+                    
+                    Capítulo 13: Las Sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../RegExps/RegExps.html">
+            
+                <a href="../../RegExps/RegExps.html">
+            
+                    
+                    Capítulo 14: Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Capítulo 2: NodeJS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs">NODEJS</h1>
+<p><a href="https://nodejs.org/en/" target="_blank">NodeJS</a> es un entorno en tiempo de ejecuci&#xF3;n multiplataforma, de c&#xF3;digo abierto, pensado para funcionar en el lado del servidor pero no limit&#xE1;ndose a ello. Est&#xE1; basado en el motor V8 de Javascript de Google, y por tanto sus ficheros de configuraci&#xF3;n y pr&#xE1;cticamente cualquier forma de interactuar con &#xE9;l se hace mediante Javascript. Sabemos que Javascript es un lenguaje as&#xED;ncrono: NodeJS utiliza de la misma manera entradas y salidas as&#xED;ncronas que se ejecutan concurrentemente utilizando &#xFA;nicamente un hilo de ejecuci&#xF3;n. El resultado es un entorno de ejecuci&#xF3;n del lado del servidor que compila y ejecuta Javascript a velocidades muy altas.</p>
+<p>El motor V8 de Javascript de Google est&#xE1; dise&#xF1;ado para correr en un navegador y ejecutar el c&#xF3;digo de Javascript de una forma extremadamente r&#xE1;pida. De hecho, la velocidad de este motor a la hora de ejecutar se debe principalmente a que compila Javascript en c&#xF3;digo m&#xE1;quina nativo, en lugar de interpretarlo y ejecutarlo como bytecode. Posee un amplio conjunto de liber&#xED;as que lo convierten en una herramienta muy completa.</p>
+<blockquote>
+<p>Node.js facilita mucho la creaci&#xF3;n de programas altamente escalables en un servidor</p>
+</blockquote>
+<p>Ya hemos mencionado que Node trabaja con un &#xFA;nico hilo de ejecuci&#xF3;n, encargado de organizar todo el flujo de trabajo, pero, &#xBF;qu&#xE9; sucede si ese hilo se pone a realizar una tarea que lleva X tiempo y queda bloqueado? La respuesta es que esto nunca sucede, pues Node gestiona todas sus tareas de forma as&#xED;ncrona. Delega todo el trabajo en lo que se llama un pool de threads, y una vez completado, este pool emitir&#xE1; un evento que ser&#xE1; recibido de nuevo por Node. Una funci&#xF3;n de callback se encarga de terminar de procesarlo.</p>
+<p>&#xBF;Qu&#xE9; problema resuelve Node? Pues principalmente ahorra la necesidad de utilizar lenguajes como Java o PHP en el lado del servidor, para los que cada conexi&#xF3;n genera un nuevo hilo que conlleva un consumo extra de memoria. El cuello de botella deja de ser entonces el n&#xFA;mero m&#xE1;ximo de conexiones concurrentes que puede manejar un servidor. Se cambia la forma en que se realiza la conexi&#xF3;n, pasando de ser un nuevo hilo de ejecuci&#xF3;n a un evento as&#xED;ncrono dentro de Node.</p>
+<hr>
+<h3 id="node-package-manager">NODE PACKAGE MANAGER</h3>
+<p>El <a href="https://www.npmjs.com" target="_blank">Node Package Manager</a>, para abreviar NPM, es un gestor de m&#xF3;dulos y aplicaciones para NodeJS, con el cual los desarrolladores pueden crear, compartir y reutilizar m&#xF3;dulos en las aplicaciones que se ejecutan en este entorno. Los m&#xF3;dulos son desde peque&#xF1;os objetos hasta aplicaciones completas de un cat&#xE1;logo que ha llegado a ser muy extenso.</p>
+<p>Al instalar NodeJS, es bastante probable que NPM se instale tambi&#xE9;n. En cualquier caso, se puede instalar o actualizar NPM con el siguiente comando:</p>
+<pre><code>$ npm install npm@latest -g
+$ npm --para comprobar si est&#xE1; instalado
+</code></pre><p>Hay dos formas de instalar m&#xF3;dulos en NPM: de forma global o de forma local. Es importante saber c&#xF3;mo funcionan porque dependiendo de las necesidades del programador, conviene utilizar una u otra. La diferencia b&#xE1;sica radica en que hay ciertos m&#xF3;dulos que permiten ser utilizados mediante la l&#xED;nea de comandos desde cualquier lugar del sistema de archivos. La instalaci&#xF3;n es exactamente igual que la local, pero a&#xF1;adiendo la opci&#xF3;n <code>-g</code>.</p>
+<p>Con la instalaci&#xF3;n local, el m&#xF3;dulo se instalar&#xE1; localmente en el proyecto, en una carpeta llamada <code>node_modules</code>, que se crea autom&#xE1;ticamente cuando instalamos nuestro primer m&#xF3;dulo:</p>
+<pre><code>$ npm install [nombre-modulo] --instalacion
+$ npm docs [nombre-modulo]    --para ver su documentacion
+</code></pre><p>Para utilizar los m&#xF3;dulos, desde una aplicaci&#xF3;n NodeJS, creamos una variable para asociarla al m&#xF3;dulo:</p>
+<pre><code>var modulo = require(&apos;modulo&apos;);
+</code></pre><p>Una tarea fundamental para trabajar con NPM es conocer el archivo <code>package.json</code>. Evita instalar m&#xF3;dulos uno a uno ya que los descarga de forma autom&#xE1;tica, facilita la instalaci&#xF3;n de nuestra aplicaci&#xF3;n a otros desarrolladores y permite almacenar todos los ficheros y documentaci&#xF3;n de una determinada aplicaci&#xF3;n en un solo lugar. As&#xED;, la estructura de un proyecto NodeJS se compondr&#xED;a de los ficheros de c&#xF3;digo fuente, el directorio <code>node_modules</code> y el archivo <code>package.json</code>.</p>
+<pre><code>{
+    &quot;name&quot;: &quot;app&quot;,
+    &quot;version&quot;: &quot;2.77.02&quot;,
+    &quot;dependencies&quot;: {
+        &quot;modulo&quot;: &quot;version&quot;,
+        &quot;modulo2&quot;: &quot;version&quot;
+    }
+}
+</code></pre><p>Esta es la sintaxis m&#xE1;s sencilla de un archivo <code>package.json</code>. Desde la ra&#xED;z de nuestro proyecto, ejecutar&#xED;amos el siguiente comando y se instalar&#xED;an autom&#xE1;ticamente los m&#xF3;dulos especificados:</p>
+<pre><code>$ npm install
+</code></pre><p>Esto tiene otra ventaja importante, y es que no har&#xED;a falta copiar el contenido de la carpeta <code>node_modules</code>, porque las dependencias ya estar&#xED;an incluidas en el <code>package.json</code>. Por esto, es una buena pr&#xE1;ctica a&#xF1;adir al fichero .gitignore la carpeta <code>node_modules</code>, ya con el <code>package.json</code> nos bastar&#xED;a.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Git/git.html" class="navigation navigation-prev " aria-label="Previous page: Capítulo 1: Git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../MarkDown/markdown.html" class="navigation navigation-next " aria-label="Next page: Capítulo 3: MarkDown">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Capítulo 2: NodeJS","level":"1.3","depth":1,"next":{"title":"Capítulo 3: MarkDown","level":"1.4","depth":1,"path":"Tutorial/MarkDown/markdown.md","ref":"Tutorial/MarkDown/markdown.md","articles":[]},"previous":{"title":"Capítulo 1: Git","level":"1.2","depth":1,"path":"Tutorial/Git/git.md","ref":"Tutorial/Git/git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorial/NodeJS/nodejs.md","mtime":"2017-03-30T09:44:16.839Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T20:50:25.720Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

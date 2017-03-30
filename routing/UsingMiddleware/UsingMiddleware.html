@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Capítulo 10: Los Middleware · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../RouterAPIDocumentation/RouterAPIDocs.html" />
+    
+    
+    <link rel="prev" href="../RoutingGuide/RoutingGuide.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Capítulo 0: Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Tutorial/Git/git.html">
+            
+                <a href="../../Tutorial/Git/git.html">
+            
+                    
+                    Capítulo 1: Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Tutorial/NodeJS/nodejs.html">
+            
+                <a href="../../Tutorial/NodeJS/nodejs.html">
+            
+                    
+                    Capítulo 2: NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Tutorial/MarkDown/markdown.html">
+            
+                <a href="../../Tutorial/MarkDown/markdown.html">
+            
+                    
+                    Capítulo 3: MarkDown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Tutorial/gh-pages/gh-pages.html">
+            
+                <a href="../../Tutorial/gh-pages/gh-pages.html">
+            
+                    
+                    Capítulo 4: GitHub Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Tutorial/GitBook/gitbook.html">
+            
+                <a href="../../Tutorial/GitBook/gitbook.html">
+            
+                    
+                    Capítulo 5: GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Tutorial/Pandoc/pandoc.html">
+            
+                <a href="../../Tutorial/Pandoc/pandoc.html">
+            
+                    
+                    Capítulo 6: Pandoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Tutorial/HerramientasUtiles/herraminetasUtiles.md">
+            
+                <span>
+            
+                    
+                    Capítulo 7: Herramientas útiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../BasicRouting/BasicRouting.html">
+            
+                <a href="../BasicRouting/BasicRouting.html">
+            
+                    
+                    Capítulo 8: Enrutamiento básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../RoutingGuide/RoutingGuide.html">
+            
+                <a href="../RoutingGuide/RoutingGuide.html">
+            
+                    
+                    Capítulo 9: Guía de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="UsingMiddleware.html">
+            
+                <a href="UsingMiddleware.html">
+            
+                    
+                    Capítulo 10: Los Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                <a href="../RouterAPIDocumentation/RouterAPIDocs.html">
+            
+                    
+                    Capítulo 11: Documentación de la API de enrutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../CookiesSessions/cookies.html">
+            
+                <a href="../../CookiesSessions/cookies.html">
+            
+                    
+                    Capítulo 12: Las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../CookiesSessions/sessions.html">
+            
+                <a href="../../CookiesSessions/sessions.html">
+            
+                    
+                    Capítulo 13: Las Sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../RegExps/RegExps.html">
+            
+                <a href="../../RegExps/RegExps.html">
+            
+                    
+                    Capítulo 14: Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Capítulo 10: Los Middleware</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="using-middleware">Using middleware</h1>
+<p>Una aplicaci&#xF3;n Express es fundamentalmente una serie de llamadas a funciones de middleware.</p>
+<h3 id="&#xBF;qu&#xE9;-es-middleware">&#xBF;Qu&#xE9; es middleware?</h3>
+<p>Middleware son funciones que tienen acceso al objeto de solicitud <strong>req</strong>, al objeto de respuesta <strong>res</strong> y a la siguiente funci&#xF3;n de middleware en el ciclo de solicitud/respuestas de la aplicaci&#xF3;n, la cual se suele denotar por la variable <strong>next</strong>. Si la funci&#xF3;n middleware actual no finaliza el ciclo de solicitud/respuestas, debe invocar <strong>next()</strong> para pasar el control a la siguiente funci&#xF3;n de middleware o la solicitud quedar&#xE1; colgada.</p>
+<p>Una aplicaci&#xF3;n Express puede utilizar diferentes tipos de middleware. A con
+tinuaci&#xF3;n se ver&#xE1;n todos estos tipos con algunos ejemplos.</p>
+<h3 id="middleware-de-nivel-de-aplicaci&#xF3;n">Middleware de nivel de aplicaci&#xF3;n</h3>
+<p>Los middlware de nivel de aplicaci&#xF3;n, se enlazan a una instancia del objeto de aplicaci&#xF3;n utilizando las funciones <strong>app.use()</strong> y <strong>app.METHOD()</strong>, donde METHOD es el m&#xE9;todo HTTP de la solicitud que maneja la funci&#xF3;n de middleware.</p>
+<p>A continuaci&#xF3;n, se muestra un ejemplo de una funci&#xF3;n middleware montada en /user/:id.</p>
+<pre><code class="lang-js"> app.use(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request Type:&apos;</span>, req.method);
+  next();
+});
+</code></pre>
+<p>Ejemplo que muestra una ruta y su manejo por parte del middleware para las solicitudes GET en /user/:id</p>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  res.send(<span class="hljs-string">&apos;USER&apos;</span>);
+});
+</code></pre>
+<p>Los manejadores de rutas permiten definir varias rutas para una v&#xED;a de acceso.Para omitir el resto de las funciones middleware de una pila de middlware, se invoca <strong>next(&apos;route&apos;)</strong> para pasar el control a la siguiente ruta.</p>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// if the user ID is 0, skip to the next route</span>
+  <span class="hljs-keyword">if</span> (req.params.id == <span class="hljs-number">0</span>) next(<span class="hljs-string">&apos;route&apos;</span>);
+  <span class="hljs-comment">// otherwise pass the control to the next middleware function in this stack</span>
+  <span class="hljs-keyword">else</span> next(); <span class="hljs-comment">//</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// render a regular page</span>
+  res.render(<span class="hljs-string">&apos;regular&apos;</span>);
+});
+</code></pre>
+<h3 id="middleware-de-nivel-de-direccionador">Middleware de nivel de direccionador</h3>
+<p>El middleware de nivel de direccionador funciona de la misma manera que el middleware de nivel de aplicaci&#xF3;n, con la diferencia de que se enlaza a una instancia de <strong>express.Router()</strong>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> router = express.Router();
+</code></pre>
+<p>Para usar el middleware de nivel de direccionador, se utilizan las funciones <strong>router.use()</strong> y <strong>router.METHOD()</strong>. A continuaci&#xF3;n, se muestra un ejemplo de la utilizaci&#xF3;n de router con el mismo ejemplo que se mostr&#xF3; anteriormente, utilizando ahora el middleware de nivel de direccionador:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> router = express.Router();
+
+<span class="hljs-comment">// a middleware function with no mount path. This code is executed for every request to the router</span>
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Time:&apos;</span>, <span class="hljs-built_in">Date</span>.now());
+  next();
+});
+
+<span class="hljs-comment">// a middleware sub-stack shows request info for any type of HTTP request to the /user/:id path</span>
+router.use(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request URL:&apos;</span>, req.originalUrl);
+  next();
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request Type:&apos;</span>, req.method);
+  next();
+});
+
+<span class="hljs-comment">// a middleware sub-stack that handles GET requests to the /user/:id path</span>
+router.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// if the user ID is 0, skip to the next router</span>
+  <span class="hljs-keyword">if</span> (req.params.id == <span class="hljs-number">0</span>) next(<span class="hljs-string">&apos;route&apos;</span>);
+  <span class="hljs-comment">// otherwise pass control to the next middleware function in this stack</span>
+  <span class="hljs-keyword">else</span> next(); <span class="hljs-comment">//</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// render a regular page</span>
+  res.render(<span class="hljs-string">&apos;regular&apos;</span>);
+});
+
+<span class="hljs-comment">// handler for the /user/:id path, which renders a special page</span>
+router.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(req.params.id);
+  res.render(<span class="hljs-string">&apos;special&apos;</span>);
+});
+
+<span class="hljs-comment">// mount the router on the app</span>
+app.use(<span class="hljs-string">&apos;/&apos;</span>, router);
+</code></pre>
+<h3 id="middlware-de-manejo-de-errores">Middlware de manejo de errores</h3>
+<p>El middleware de manejo de errores, siempre utiliza <strong>cuatro</strong> argumentos. Se deben <strong>insertar siempre los 4 argumentos</strong> para que se pueda identificar bien que es una funci&#xF3;n middleware de manejo de errores. Se debe de incluir el objeto next, aunque no se necesite su uso, para fijar los 4 argumentos y que no se tome como un middleware normal.</p>
+<p>El argumento adicional que lleva un middleware de manejo de errores es el argumento <strong>err</strong> que se suele indicar al principio de los 4:</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.error(err.stack);
+  res.status(<span class="hljs-number">500</span>).send(<span class="hljs-string">&apos;&#xA1;Algo fall&#xF3;!&apos;</span>);
+});
+</code></pre>
+<p>El middleware de manejo de errores se define al final, despu&#xE9;s de otras llamadas de <strong>rutas</strong> y <strong>app.use()</strong>. Las respuestas de una funci&#xF3;n middleware pueden estar en el formato que se prefiera, como por ejemplo, una p&#xE1;gina de errores HTML.</p>
+<p>El siguiente ejemplo, muestra la ejecuci&#xF3;n de un c&#xF3;digo con middlewares como los que se han visto hasta ahora, y un middleware de manejo de errores definido debajo:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>);
+<span class="hljs-keyword">var</span> methodOverride = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;method-override&apos;</span>);
+
+app.use(bodyParser());
+app.use(methodOverride());
+app.use(clientErrorHandler);
+app.use(errorHandler);
+</code></pre>
+<p>Donde <strong>clientErrorHandler</strong> es un middleware de manejo de errores que podr&#xED;a estar definido de la siguiente manera:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clientErrorHandler</span>(<span class="hljs-params">err, req, res, next</span>) </span>{
+  <span class="hljs-keyword">if</span> (req.xhr) {
+    res.status(<span class="hljs-number">500</span>).send({ error: <span class="hljs-string">&apos;Something failed!&apos;</span> });
+  } <span class="hljs-keyword">else</span> {
+    next(err);
+  }
+}
+</code></pre>
+<p>Y <strong>errorHandler</strong> ser&#xED;a la funci&#xF3;n final que detecta todos los errores:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">errorHandler</span>(<span class="hljs-params">err, req, res, next</span>) </span>{
+  res.status(<span class="hljs-number">500</span>);
+  res.render(<span class="hljs-string">&apos;error&apos;</span>, { error: err });
+}
+</code></pre>
+<h3 id="middleware-incorporado">Middleware incorporado</h3>
+<p>Excepto <strong>express.static</strong>, todas las funciones de middlware que se inclu&#xED;an previamente con Express est&#xE1;n ahora en m&#xF3;dulos diferentes. La &#xFA;nica funci&#xF3;n de middleware incorporada en Express es <strong>express.static</strong>. Esta funci&#xF3;n es responsable del servicio de activos est&#xE1;ticos de una aplicaci&#xF3;n.</p>
+<p>El argumento <strong>root</strong> especifica el directorio ra&#xED;z desde el que se realizan los servicios.</p>
+<p>El objeto <strong>options</strong> opcional puede tener las siguientes propiedades:</p>
+<ul>
+<li><p>dotfiles: Opci&#xF3;n para el servicio de dotfiles. Posibles valores: &quot;allow&quot;, &quot;deny&quot; e &quot;ignore&quot;.</p>
+</li>
+<li><p>etag: Habilitar o inhabilitar la generaci&#xF3;n de etag. Posibles valores: true o false.</p>
+</li>
+<li><p>extension: Establece las reservas de extensiones de archivos. (Matriz).</p>
+</li>
+<li><p>index: Env&#xED;a el archivo de &#xED;ndices de directorios.</p>
+</li>
+<li><p>lastModified: Se establece en la &#xFA;ltima fecha de modificaci&#xF3;n del archivo en el sistema operativo. Posibles valores: true o false.</p>
+</li>
+<li><p>maxAge: Se establece la cabecera Cache-Control en milisegundos.</p>
+</li>
+<li><p>redirect: Redirecciona a la &quot;/&quot; final cuando el nombre de v&#xED;a de acceso es un directorio.</p>
+</li>
+<li><p>setHeaders: Funci&#xF3;n para establecer las cabeceras HTTP que se sirven con el archivo.</p>
+</li>
+</ul>
+<p>A continuaci&#xF3;n se expone un ejemplo de una funci&#xF3;n de middleware <strong>express.static</strong> con un objeto options especificado:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> options = {
+  dotfiles: <span class="hljs-string">&apos;ignore&apos;</span>,
+  etag: <span class="hljs-literal">false</span>,
+  extensions: [<span class="hljs-string">&apos;htm&apos;</span>, <span class="hljs-string">&apos;html&apos;</span>],
+  index: <span class="hljs-literal">false</span>,
+  maxAge: <span class="hljs-string">&apos;1d&apos;</span>,
+  redirect: <span class="hljs-literal">false</span>,
+  setHeaders: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res, path, stat</span>) </span>{
+    res.set(<span class="hljs-string">&apos;x-timestamp&apos;</span>, <span class="hljs-built_in">Date</span>.now());
+  }
+}
+
+app.use(express.static(<span class="hljs-string">&apos;public&apos;</span>, options));
+</code></pre>
+<h3 id="middleware-de-terceros">Middleware de terceros</h3>
+<p>El middleware de terceros es muy &#xFA;til a la hora de a&#xF1;adir funcionalidad a las aplicaciones Express. Se ha de tener instalado <strong>npm</strong> para poder a&#xF1;adir dichos paquetes.</p>
+<p>Por ejemplo para la utilizaci&#xF3;n de una funci&#xF3;n muy utilizada como es el an&#xE1;lisis de cookies con <strong>cookie-parser</strong> se deber&#xE1;n de seguir los siguientes pasos:</p>
+<pre><code class="lang-sh">$ npm install cookie-parser
+</code></pre>
+<p>Y una vez instalado, ya podremos usarlo en nuestro c&#xF3;digo:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> cookieParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cookie-parser&apos;</span>);
+
+<span class="hljs-comment">// load the cookie-parsing middleware</span>
+app.use(cookieParser());
+</code></pre>
+<p>Hay muchas m&#xE1;s funciones de middleware de terceros que se utilizan con Express.</p>
+<p>En el siguiente enlace puede consultar una lista con las principales funciones y sus utlidades: <a href="http://expressjs.com/es/resources/middleware.html" target="_blank">Funciones de middleware de terceros</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../RoutingGuide/RoutingGuide.html" class="navigation navigation-prev " aria-label="Previous page: Capítulo 9: Guía de enrutamiento">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../RouterAPIDocumentation/RouterAPIDocs.html" class="navigation navigation-next " aria-label="Next page: Capítulo 11: Documentación de la API de enrutamiento">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Capítulo 10: Los Middleware","level":"1.11","depth":1,"next":{"title":"Capítulo 11: Documentación de la API de enrutamiento","level":"1.12","depth":1,"path":"routing/RouterAPIDocumentation/RouterAPIDocs.md","ref":"routing/RouterAPIDocumentation/RouterAPIDocs.md","articles":[]},"previous":{"title":"Capítulo 9: Guía de enrutamiento","level":"1.10","depth":1,"path":"routing/RoutingGuide/RoutingGuide.md","ref":"routing/RoutingGuide/RoutingGuide.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"routing/UsingMiddleware/UsingMiddleware.md","mtime":"2017-03-30T09:44:16.839Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T20:50:25.720Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
