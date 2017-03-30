@@ -1,0 +1,17 @@
+Node app is running on port 8080
+Node app is running on port 8081
+events.js:161
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8081
+    at Object.exports._errnoException (util.js:1023:11)
+    at exports._exceptionWithHostPort (util.js:1046:20)
+    at Server._listen2 (net.js:1261:14)
+    at listen (net.js:1297:10)
+    at Server.listen (net.js:1375:9)
+    at Function.listen (/home/usuario/PL/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/usuario/PL/analizador-lexico-para-un-subconjunto-de-javascript-guillermo-eduardo-oscar-sergio/app.js:16:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
