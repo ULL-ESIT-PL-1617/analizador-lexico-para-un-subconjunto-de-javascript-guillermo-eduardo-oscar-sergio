@@ -3,7 +3,7 @@
 ## Despliegue
 
 * [Heroku](https://analizador-lexico-js-egos.herokuapp.com)
-* IAAS()
+* [IAAS](http://10.6.128.161:8081/)
 
 
 ## Descripción
